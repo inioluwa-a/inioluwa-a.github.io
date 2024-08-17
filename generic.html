@@ -1,12 +1,44 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-    <title>My Toolkit - Inioluwa's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inioluwa's Toolkit - Data Analyst & Web Developer</title>
     <link rel="icon" type="image/x-icon" href="/images/sharefavicon.ico">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <style>
+        .toolkit {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 2em 0;
+            text-align: center;
+        }
+        .toolkit-item {
+            background: #f8f8f8;
+            padding: 1.5em;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+        .toolkit-item:hover {
+            transform: translateY(-5px);
+        }
+        .toolkit-logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1em;
+        }
+        .toolkit-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .toolkit-desc {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -15,7 +47,7 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="index.html" class="logo">Inioluwa's Toolkit</a>
+            <a href="index.html" class="logo">Inioluwa's Portfolio</a>
         </header>
 
         <!-- Nav -->
@@ -35,56 +67,81 @@
 
         <!-- Main -->
         <div id="main">
-            <!-- Toolkit Section -->
+
+            <!-- Post -->
             <section class="post">
                 <header class="major">
                     <h1>My Toolkit</h1>
-                    <p>Here are the technologies and tools I use to build and design.</p>
+                    <p>Every great creation begins with the right tools. Here’s a glimpse into my arsenal, where creativity meets precision.</p>
                 </header>
-
-                <div class="toolkit-grid">
-                    <!-- Example Tool -->
-                    <div class="tool-item">
-                        <img src="images/python-logo.png" alt="Python" class="tool-logo" />
-                        <h3>Python</h3>
-                        <p>Powerful programming language used for data analysis, web development, automation, and more.</p>
+                <div class="toolkit">
+                    <div class="toolkit-item">
+                        <img src="images/logos/python.png" alt="Python Logo" class="toolkit-logo">
+                        <h2 class="toolkit-title">Python</h2>
+                        <p class="toolkit-desc">Data wrangling and analysis with Pandas, NumPy, and Matplotlib.</p>
                     </div>
-
-                    <div class="tool-item">
-                        <img src="images/html-logo.png" alt="HTML" class="tool-logo" />
-                        <h3>HTML</h3>
-                        <p>The standard markup language used for creating web pages.</p>
+                    <div class="toolkit-item">
+                        <img src="images/logos/sql.png" alt="SQL Logo" class="toolkit-logo">
+                        <h2 class="toolkit-title">SQL</h2>
+                        <p class="toolkit-desc">Efficient querying and database management.</p>
                     </div>
-
-                    <div class="tool-item">
-                        <img src="images/css-logo.png" alt="CSS" class="tool-logo" />
-                        <h3>CSS</h3>
-                        <p>Stylesheet language used to describe the presentation of a document written in HTML or XML.</p>
+                    <div class="toolkit-item">
+                        <img src="images/logos/excel.png" alt="Excel Logo" class="toolkit-logo">
+                        <h2 class="toolkit-title">Excel</h2>
+                        <p class="toolkit-desc">Advanced data manipulation and analysis.</p>
                     </div>
-
-                    <div class="tool-item">
-                        <img src="images/sql-logo.png" alt="SQL" class="tool-logo" />
-                        <h3>SQL</h3>
-                        <p>A domain-specific language used in programming and designed for managing data in relational databases.</p>
+                    <div class="toolkit-item">
+                        <img src="images/logos/html.png" alt="HTML Logo" class="toolkit-logo">
+                        <h2 class="toolkit-title">HTML & CSS</h2>
+                        <p class="toolkit-desc">Crafting clean, responsive web designs.</p>
                     </div>
-
-                    <div class="tool-item">
-                        <img src="images/excel-logo.png" alt="Excel" class="tool-logo" />
-                        <h3>Excel</h3>
-                        <p>Spreadsheet software used for data organization, analysis, and visualization.</p>
+                    <div class="toolkit-item">
+                        <img src="images/logos/wordpress.png" alt="WordPress Logo" class="toolkit-logo">
+                        <h2 class="toolkit-title">WordPress</h2>
+                        <p class="toolkit-desc">Building dynamic and user-friendly websites.</p>
                     </div>
-
-                    <!-- Add more tools as needed -->
+                    <div class="toolkit-item">
+                        <img src="images/logos/figma.png" alt="Figma Logo" class="toolkit-logo">
+                        <h2 class="toolkit-title">Figma</h2>
+                        <p class="toolkit-desc">Designing with creativity and collaboration in mind.</p>
+                    </div>
+                    <div class="toolkit-item">
+                        <img src="images/logos/webflow.png" alt="Webflow Logo" class="toolkit-logo">
+                        <h2 class="toolkit-title">Webflow</h2>
+                        <p class="toolkit-desc">Turning designs into fully functional websites.</p>
+                    </div>
                 </div>
             </section>
+
         </div>
 
         <!-- Footer -->
         <footer id="footer">
+            <section>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message"></li>
+                    </ul>
+                </form>
+            </section>
             <section class="split contact">
                 <section>
                     <h3>Phone</h3>
-                    <p><a href="#">(234) 805-4002-093</a></p>
+                    <p><a href="tel:+2348054002093">(234) 805-4002-093</a></p>
                 </section>
                 <section>
                     <h3>Email</h3>
@@ -104,7 +161,7 @@
 
         <!-- Copyright -->
         <div id="copyright">
-            <ul><li>&copy; 2024 Inioluwa's Portfolio</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+            <ul><li>&copy; 2024 Inioluwa Apara</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
         </div>
 
     </div>
